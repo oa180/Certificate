@@ -1,0 +1,210 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to right, #8e0e00, #1f1c18);
+    border-bottom: 2px solid white;
+
+}
+.header_box{
+    width: 30%;
+    height: 100px;
+}
+.restaurant_name{
+    float: right;
+    line-height: 100px;
+    font-weight: bold;
+    font-variant:small-caps;
+    font-family:'Noto Sans KR', sans-serif;
+    color: wheat;
+    transform: translate(-700%,-3%);
+
+}
+.restaurant_logo{
+    /*border-radius: 50%;*/
+    float: left;
+    height: 100%;
+    border: 2px solid white;
+}
+
+.departments a{
+    text-decoration: none;
+    text-align: center;
+
+}
+.departments li:nth-child(1) {
+    border-left: 2px solid wheat;
+}
+
+.departments li:nth-child(1):hover {
+    border-left: 2px solid #8E0E00;
+}
+
+.departments li{
+    float: right;
+    width: 100px;
+    display: inline-block;
+    line-height: 100px;
+    font-weight: bold;
+    font-family:'Noto Sans KR', sans-serif;
+    color:wheat;
+}
+.departments li:hover{
+    background-color: wheat;
+    color: #8E0E00;
+}
+main{
+     width: 100%;
+     height:500px;
+     background: linear-gradient(to right, white, #c3c50a);
+    animation-name: Bounce_to_top;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+ }
+@keyframes Bounce_to_top {
+    0%{
+        background-color: black;
+    }
+    25%{
+        background-color: red;
+
+    }
+    50%{
+        background-color: blue;
+
+    }
+
+    100%{
+        background-color: yellow;
+
+    }
+
+}
+aside{
+    width: 30%;
+    height: 260px;
+    background: linear-gradient(to right, #8e0e00, #1f1c18);
+    text-align: left;
+    float: left;
+}
+aside img{
+    width: 30%;
+    height: 100%;
+}
+aside h1{
+    float: right;
+    transform: translate(-20%,50%);
+    background: linear-gradient(to left, white, #c3c50a);
+    border:  #c3c50a solid 2px ;
+    color: #8E0E00;
+    animation: UpsAnddowns 5s linear 0s infinite;
+}
+@keyframes UpsAnddowns {
+    0%{
+        transform: translate(-20%,50%);
+    }
+    50%{
+        transform: translate(-20%,500%);
+
+    }
+    100%{
+        transform: translate(-20%,50%);
+    }
+}
+
+#goal{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+#sent{
+    width:400px;
+    height:100px;
+    background: linear-gradient(to right, #8e0e00, #1f1c18);
+    text-align: center;
+    position: absolute;
+    top:20%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+
+}
+.so{
+    line-height: 100px;
+    color: wheat;
+    padding: 2px;
+    border-bottom : wheat 2px solid;
+    font-weight: bold;
+    font-variant:small-caps;
+    font-family:'Noto Sans KR', sans-serif;
+}
+.contact{
+    width: 100%;
+    background-color: wheat;
+    border: 2px solid #8e0e00;
+
+}
+
+.clogo{
+    width: 45px;
+    margin-top: 2px;
+    margin-left: 40px;
+}
+#car{
+    font-weight: bold;
+    font-family:'Noto Sans KR', sans-serif;
+}
+
+footer{
+    text-align: center;
+}
+#table1{
+    width: 100%;
+    background: linear-gradient(to right, white, #c3c50a);
+    display: inline-block;
+
+}
+#table1 td{
+
+    transform: translate(100%,-40%);
+}
+#table1 img{
+    border-radius: 10%;
+}
+.third{
+    margin-left: 17px;
+}
+.fifth{
+transform: translateX(5%);
+}
+.sixth{
+    transform: translateX(10%);
+}
+
+@media only screen and(min-width: 1000px) and(max-width: 1070px){
+    .restaurant_name {
+        float: right;
+        line-height: 100px;
+        font-weight: bold;
+        font-variant: small-caps;
+        font-family: 'Noto Sans KR', sans-serif;
+        color: wheat;
+        transform: translate(-390%, -3%);
+    }
+    @keyframes UpsAnddowns {
+
+        0% {
+            transform: translate(10%,-700%);
+        }
+        50% {
+            transform: translate(10%,-200%);
+        }
+        100% {
+            transform: translate(10%,700%);
+        }
+    }
+}
